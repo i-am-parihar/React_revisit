@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "name": "paritosh",
+      "age": "23",
+      "dob": "2022-04-02",
+      "status": "single",
+      "address": "bhopla",
+      "pin_code": "123123",
+      "id": 1
+    },
+    {
+      "name": "raj",
+      "age": "24",
+      "dob": "2022-04-01",
+      "status": "single",
+      "address": "bhopal",
+      "pin_code": "657567",
+      "id": 2
+    }
+  ]
+}
