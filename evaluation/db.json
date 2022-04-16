@@ -1,0 +1,28 @@
+{
+  "country": [
+    {
+      "name": "India",
+      "id": 1
+    },
+    {
+      "name": "SriLanka",
+      "id": 2
+    },
+    {
+      "name": "China",
+      "id": 3
+    },
+    {
+      "name": "Bhutan",
+      "id": 4
+    }
+  ],
+  "city": [
+    {
+      "city": "Delhi",
+      "population": "1200000",
+      "countryName": "India",
+      "id": 1
+    }
+  ]
+}
