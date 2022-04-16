@@ -3,19 +3,19 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-// import { RegistrationContextProvider } from "./context/registrationContext";
+import { RegistrationContextProvider } from "./context/registrationContext";
 import { BrowserRouter } from "react-router-dom";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-//  <RegistrationContextProvider>
+ <RegistrationContextProvider>
    <BrowserRouter>
    <React.StrictMode>
     <App />
   </React.StrictMode>
    </BrowserRouter>
-//  </RegistrationContextProvider>
+ </RegistrationContextProvider>
 );
 
 reportWebVitals();

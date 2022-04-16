@@ -17,6 +17,15 @@
       "address": "bhopal",
       "pin_code": "657567",
       "id": 2
+    },
+    {
+      "name": "paritosh",
+      "age": "25",
+      "dob": "2022-04-01",
+      "status": "single",
+      "address": "bhopal",
+      "pin_code": "435345",
+      "id": 3
     }
   ]
 }

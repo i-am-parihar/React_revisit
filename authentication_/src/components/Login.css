@@ -1,0 +1,47 @@
+.main{
+    width: 400px;
+    margin-left: 35%;
+    margin-top: 7%;
+    line-height: 50px;
+    padding-left: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.main button{
+    color: white;
+    background-color: rgb(174, 174, 74);
+    border: 1px solid ;
+    padding: 10px;
+    border-radius: 10px;
+}
+.main input{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid ;
+    margin-left: 20%;
+    margin-bottom: 10%;
+}
+.main button{
+    margin-left: 35%;
+}
+.main h2{
+    margin-left: 35%;
+}
+
+.home{
+    width: 500px;
+    margin-left: 35%;
+ }
+ .home button{
+     color: white;
+     background-color: rgb(174, 174, 74);
+     border: 1px solid ;
+     padding: 10px;
+     border-radius: 10px;
+ }
+ button:hover{
+     cursor: pointer;
+ }
+ h2:hover{
+     cursor: pointer;
+ }
