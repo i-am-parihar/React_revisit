@@ -3,6 +3,10 @@ import {useSelector , useDispatch} from "react-redux" ;
 import { login } from '../Redux/login/action';
 import { Link } from "react-router-dom"
 import { Spinner } from 'react-bootstrap';
+import Button from '@mui/material/Button';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import "../App.css"
 
 export const Login = () => { 
     const [email , setEmail] = useState("") ;
@@ -34,26 +38,41 @@ export const Login = () => {
        }
        
     return(
+        <div className='loginBox'>
+             <Box
+              component="form"
+             sx={{
+                  '& .MuiTextField-root': { m: 1, width: '25ch' },
+                }}
+             noValidate
+             autoComplete="off"
+             >
         <div>
-            <input
-            type="text" 
-            placeholder='Enter Email'
+            <TextField
+            error
+            id="outlined-error"
+            label="Enter Email"
             value={email} 
             onChange={(e)=> setEmail(e.target.value)}
-            />
-            <br/>
-            <input
-            type="text"
-            placeholder="Enter Password"
+        />
+        </div>
+        <div>
+            <TextField
+            error
+            id="filled-error"
+            label="Enter Password"
             value={password}
             onChange={(e)=>setPassword(e.target.value)}
-            />
+        />
+        </div>
+            </Box> 
             <br/>
-            <button onClick={handelSubmit}>Submit</button>
+            <Button variant="contained" onClick={handelSubmit}>Submit</Button>
             <Link to="/">Home Page</Link>
             <h4>Don't have any account? Click here!</h4>
-            <Link to="/registration"><button>Click</button></Link>
+            <Link to="/registration"><Button variant="contained">Click</Button></Link>
 
         </div>
+
     )
 }

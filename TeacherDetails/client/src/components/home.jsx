@@ -3,6 +3,7 @@ import {useSelector , useDispatch } from "react-redux" ;
 import {Link, Navigate} from "react-router-dom"
 import { classData, fetchdata } from '../Redux/Home/action';
 
+
 export const Home = () => { 
     const {isAuthenticated} = useSelector((state) => state.login)
     const dispatch = useDispatch() ;
@@ -36,8 +37,7 @@ export const Home = () => {
                        <th>Age</th>
                        <th>Classes</th>
                    </tr>
-                   {
-                       data.map((e,id) => {
+                   { data.map((e,id) => {
                            return(
                                <tr>
                                  <Link to="/details"><td onClick={() => {handelChange(e)}}>{e.name}</td></Link>
