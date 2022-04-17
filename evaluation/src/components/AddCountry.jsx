@@ -14,7 +14,7 @@ export const AddCountry = () => {
       dispatch(addcountry(countryName)) ;
   }
 
-  const {loading , addCountry , error} = useSelector((state) => state.country) ;
+  const {loading} = useSelector((state) => state.country) ;
   if(loading){
      return(
         <div className='spinner'>

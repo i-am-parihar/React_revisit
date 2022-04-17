@@ -19,7 +19,7 @@ export const AddCity = () => {
     population,
     countryName,
     } 
-    dispatch(addcity(details)) ;
+    dispatch(addcity(details)) ;               
    }
 
    useEffect(() => {
@@ -28,7 +28,7 @@ export const AddCity = () => {
       }) 
    },[]) ;
   
-   const {loading , addCity , error} = useSelector((state) => state.city) ;
+   const {loading} = useSelector((state) => state.city) ;
    if(loading){
     return(
        <div className='spinner'>
@@ -42,7 +42,7 @@ export const AddCity = () => {
    {<Spinner animation="border" role="status"></Spinner>}    
    </div> 
     )
- }
+   }
  
     return(
         <div>

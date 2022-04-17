@@ -23,7 +23,7 @@ export const Home = () => {
         .catch((err) => console.log(err))
         }
     
-   const {loading , homedata , error} = useSelector((state) => state.home) ;
+   const {loading} = useSelector((state) => state.home) ;
    if(loading){
     return(
        <div className='spinner'>

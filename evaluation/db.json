@@ -15,6 +15,14 @@
     {
       "name": "Bhutan",
       "id": 4
+    },
+    {
+      "name": "Afganistan",
+      "id": 5
+    },
+    {
+      "name": "Pakistan",
+      "id": 6
     }
   ],
   "city": [
@@ -22,12 +30,6 @@
       "city": "Delhi",
       "population": "1200000",
       "countryName": "India",
-      "id": 1
-    },
-    {
-      "city": "Lahore",
-      "population": "100000",
-      "countryName": "Pakistam",
       "id": 1
     },
     {
@@ -41,6 +43,12 @@
       "population": "1000000",
       "countryName": "USA",
       "id": 1
+    },
+    {
+      "city": "Lahore",
+      "population": "120000",
+      "countryName": "Pakistan",
+      "id": 2
     }
   ]
 }
