@@ -8,6 +8,7 @@ app.use(express.json()) ;
 app.post ("/login" , login) ;
 app.post("/register" , register) ;
 app.use("/data" , data) ;
+app.use("/data/:name" , data) ;
 
 app.listen(8080,async() => {
     try{

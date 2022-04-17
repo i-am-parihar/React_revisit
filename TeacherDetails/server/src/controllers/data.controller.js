@@ -14,6 +14,16 @@ router.get("" , async(req,res) => {
     }
 });
 
+router.get("/:name" , async(req,res) => {
+    try{
+        const teachersData = await Data.find({'name':req.query.name}).lean().exec() ;
+        return res.send(teachersData) ;
+    }
+    catch(er){
+        return res.status(500).send(er.message) ;
+    }
+});
+
 router.post("" , async(req,res)=>{
     try{
        const teachersData = await Data.create(req.body) ;
