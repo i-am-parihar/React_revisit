@@ -22,9 +22,9 @@ export const Home = () => {
         console.log(e.class)
     }
  
-    // if(!isAuthenticated){
-    //     return <Navigate to="/login"/>
-    // }
+    if(!isAuthenticated){
+        return <Navigate to="/login"/>
+    }
     
     return(
         <div>
